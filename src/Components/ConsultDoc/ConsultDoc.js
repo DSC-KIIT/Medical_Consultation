@@ -1,11 +1,11 @@
-import React, { Component } from 'react'
+import React from 'react'
+import Navbar from '../layout/Navbar/Navbar'
 
-export class ConsultDoc extends Component {
-    render(){
-        return (
-            <div>
-                <h1>I am Consult a Doc page</h1>
-            </div>
-        )
-    }
+export function ConsultDoc(){
+    return (
+        <div>
+            <Navbar />
+            <h1>I am Consult a Doc page</h1>
+        </div>
+    );
 }
