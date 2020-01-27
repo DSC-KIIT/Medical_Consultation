@@ -6,15 +6,13 @@
     font-size: 36px;
 
 }
-.navbar {
-    background-color: #50d890;
+#navbar {
+    background: rgb(80,216,144);
+    background: -moz-linear-gradient(180deg, rgba(80,216,144,1) 1%, rgba(79,152,202,1) 99%);
+    background: -webkit-linear-gradient(180deg, rgba(80,216,144,1) 1%, rgba(79,152,202,1) 99%);
+    background: linear-gradient(180deg, rgba(80,216,144,1) 1%, rgba(79,152,202,1) 99%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#50d890",endColorstr="#4f98ca",GradientType=1);
 }
-.color {
-    color: #effffb;
-}
-.links {
-    font-family: 'Nova Round', cursive;
-    font-weight: 200;
-    font-size: 18px;
-
+.menu{
+    transform: scale(1.8);  
 }
