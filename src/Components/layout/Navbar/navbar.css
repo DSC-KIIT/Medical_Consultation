@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Nova+Round&display=swap');
+
+.branding {
+    font-family: 'Nova Round', cursive;
+    font-weight: 400;
+    font-size: 36px;
+
+}
+.navbar {
+    background-color: #50d890;
+}
+.color {
+    color: #effffb;
+}
+.links {
+    font-family: 'Nova Round', cursive;
+    font-weight: 200;
+    font-size: 18px;
+
+}

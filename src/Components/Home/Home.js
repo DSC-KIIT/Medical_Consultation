@@ -1,15 +1,13 @@
 import React, { Component } from 'react'
+import Navbar from '../layout/Navbar/Navbar'
 
 
-export class Home extends Component {
-
-    render(){
-        return(
-            <div>
-                <h1>I am home</h1>
-            </div>
-        )
-    }
+export function Home() {
+    return(
+        <div>
+            <Navbar />
+            <h1>I am home</h1>
+        </div>
+    );
 }
 
-export default Home
