@@ -1,0 +1,26 @@
+.numjob {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+  }
+  .pagination{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+  }
+  .job {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    padding: 20px 10px;
+    align-items: center;
+    background-color: #edf7fa;
+  }
+  .job:hover {
+    cursor: pointer;
+    color:#666666;
+  }
+  img{
+    border-radius: 50%;
+  }
+  
