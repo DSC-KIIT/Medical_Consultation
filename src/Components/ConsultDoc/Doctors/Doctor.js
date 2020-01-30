@@ -4,6 +4,8 @@ import ChatIcon from '@material-ui/icons/Chat';
 import Button from '@material-ui/core/Button';
 import { makeStyles } from '@material-ui/core/styles';
 import { Paper } from '@material-ui/core';
+import StarRoundedIcon from '@material-ui/icons/StarRounded';
+import StarBorderRoundedIcon from '@material-ui/icons/StarBorderRounded';
 
 const useStyles = makeStyles(theme => ({
     button: {
@@ -15,6 +17,16 @@ function Doctor({doc, onClick})
 {
    
     const classes = useStyles();
+    var stars = []
+    var antistars = []
+    for(var i=0;i<doc.rating;i++)
+    {
+        stars.push(i);
+    }
+    for(var i=0;i<(5 - doc.rating);i++)
+    {
+        antistars.push(i);
+    }
       
     return(
         <Paper className='job' onClick={onClick}>
@@ -28,7 +40,12 @@ function Doctor({doc, onClick})
                 <Typography variant='h6'>{doc.location}</Typography>
             </div>
             <div>
-                <Typography>{doc.rating}</Typography>
+                {
+                   stars.map((star)=><StarRoundedIcon fontSize='large'/>)
+                }
+                {
+                    antistars.map((antistar)=><StarBorderRoundedIcon fontSize='large'/>)
+                }
             </div>
             <div>
                 <Button
