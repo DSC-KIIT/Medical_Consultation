@@ -9,7 +9,8 @@ import PhoneRoundedIcon from '@material-ui/icons/PhoneRounded';
 import Slide from '@material-ui/core/Slide';
 import IconButton from '@material-ui/core/IconButton';
 import CloseIcon from '@material-ui/icons/Close';
-
+import StarRoundedIcon from '@material-ui/icons/StarRounded';
+import StarBorderRoundedIcon from '@material-ui/icons/StarBorderRounded';
 
 const Transition = React.forwardRef(function Transition(props, ref) {
     return <Slide direction="up" ref={ref} {...props} />;
@@ -21,6 +22,16 @@ function DoctorModal({doc, open, handleClose}) {
     if(!doc.name)
     {
         return <div></div>;
+    }
+    var stars = []
+    var antistars = []
+    for(var i=0;i<doc.rating;i++)
+    {
+        stars.push(i);
+    }
+    for(var i=0;i<(5 - doc.rating);i++)
+    {
+        antistars.push(i);
     }
     return (
       <div>
@@ -55,7 +66,12 @@ function DoctorModal({doc, open, handleClose}) {
             </div>
             <br></br>
             <div>
-              <Typography>{doc.rating}</Typography>
+              {
+                stars.map((star)=><StarRoundedIcon fontSize='large'/>)
+              }
+              {
+                    antistars.map((antistar)=><StarBorderRoundedIcon fontSize='large'/>)
+              }
             </div>
           </DialogContent>
           <DialogActions>  
