@@ -1,9 +1,14 @@
-import React from 'react'
+import React from 'react';
+import Doctors from './Doctors/Doctors';
+import {doctors} from './Doctors/constants';
+import './consultDoc.css'
 
 export function ConsultDoc(){
+    //API call
     return (
         <div>
-            <h1>I am Consult a Doc page</h1>
+            <Doctors docs={doctors} />
         </div>
+
     );
 }
