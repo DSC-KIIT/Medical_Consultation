@@ -11,3 +11,5 @@ want to deploy via your local machine (NOT RECOMMENDED)
 * Run `firebase deploy` to deploy the current build
 
 Live at: https://medicalconsultationplatform.firebaseapp.com/
+
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
