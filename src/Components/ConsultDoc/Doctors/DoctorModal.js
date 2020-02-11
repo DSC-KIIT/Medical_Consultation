@@ -25,11 +25,11 @@ function DoctorModal({doc, open, handleClose}) {
     }
     var stars = []
     var antistars = []
-    for(var i=0;i<doc.rating;i++)
+    for(let i=0;i<doc.rating;i++)
     {
         stars.push(i);
     }
-    for(var i=0;i<(5 - doc.rating);i++)
+    for(let i=0;i<(5 - doc.rating);i++)
     {
         antistars.push(i);
     }
@@ -55,7 +55,7 @@ function DoctorModal({doc, open, handleClose}) {
             <hr />
             <br></br>
             <div>
-              <img src={doc.img} />
+              <img alt="doc" src={doc.img} />
             </div>
             <br></br>
             <div>
