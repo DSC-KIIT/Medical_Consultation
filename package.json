@@ -37,6 +37,7 @@
     ]
   },
   "devDependencies": {
-    "http-server": "^0.12.1"
+    "http-server": "^0.12.1",
+    "firebase-tools": "^7.12.1"
   }
 }
