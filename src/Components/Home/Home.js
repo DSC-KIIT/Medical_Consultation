@@ -1,60 +1,45 @@
 import React from 'react'
 
-
+import './home.css'
 
 export function Home() {
     return(
-        <div class="container">
-            <div className="row">
-                <div className="col-sm-4">
-                <div class="card text-white bg-success mb-4">
-                   
-                    <div class="card-body">
-                    <h5 class="card-title">Success card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                    </div>
-                </div>
-                <div className="col-sm-4">
-                    <div class="card text-white bg-success mb-4">
-                    
-                    <div class="card-body">
-                    <h5 class="card-title">Success card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                    </div>
-                </div>
+        <div className="container-fluid">
+            <br></br>
+            <br></br>
+            <div className="cards-container">
 
-                <div className="col-sm-4">
-                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                    <div class="carousel-item active">
-                    <img src="https://image.shutterstock.com/image-photo/mountains-during-sunset-beautiful-natural-260nw-407021107.jpg" class="d-block w-100" alt="..."/>
+                <a href="/consultadoc">
+                    <div className="card">
+                        <div className="card-body">
+                            <h2 className='card-text'>Consult a Doctor</h2>
+                            <br></br>
+                            <p>Chat with a doctor of your choice and get diagnosis</p>
+                        </div>
                     </div>
-                    <div class="carousel-item">
-                    <img src="https://image.shutterstock.com/image-photo/mountains-during-sunset-beautiful-natural-260nw-407021107.jpg" class="d-block w-100" alt="..."/>
+                </a>
+
+                <a href="https://www.google.com" rel="noopener noreferrer" target="_blank">
+                    <div className="card">
+                        <div className="card-body">
+                            <h2 className='card-text'>Nearby Hospitals</h2>
+                            <br></br>
+                            <p>Find hospitals and doctors nearby</p>
+                        </div>
                     </div>
-                    <div class="carousel-item">
-                    <img src="https://image.shutterstock.com/image-photo/mountains-during-sunset-beautiful-natural-260nw-407021107.jpg" class="d-block w-100" alt="..."/>
-                    </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                    </a>
+                </a>
+
+                <div className="card" style={{width: '40%'}}>
+                    <div className="card-body">
+                        <h2 className='card-text'>Recent Medical News</h2>
+                        <br></br>
+                        <a href="https://www.google.com" rel="noopener noreferrer" target="_blank">Link 1</a> <br></br>
+                        <a href="https://www.google.com" rel="noopener noreferrer" target="_blank">Link 2</a> <br></br>
+                        <a href="https://www.google.com" rel="noopener noreferrer" target="_blank">Link 3</a>
                     </div>
                 </div>
-            </div>      
-           
+            
+            </div>
         </div>
     );
 }

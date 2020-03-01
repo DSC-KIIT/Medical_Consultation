@@ -7,11 +7,7 @@
 
 }
 #navbar {
-    background: rgb(80,216,144);
-    background: -moz-linear-gradient(180deg, rgba(80,216,144,1) 1%, rgba(79,152,202,1) 99%);
-    background: -webkit-linear-gradient(180deg, rgba(80,216,144,1) 1%, rgba(79,152,202,1) 99%);
-    background: linear-gradient(180deg, rgba(80,216,144,1) 1%, rgba(79,152,202,1) 99%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#50d890",endColorstr="#4f98ca",GradientType=1);
+    background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
 }
 .menu{
     transform: scale(1.8);  

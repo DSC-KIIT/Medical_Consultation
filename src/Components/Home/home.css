@@ -1,0 +1,40 @@
+.cards-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+a {
+    width: 26%;
+    color: black;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.card {
+    height: 20rem;
+    background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+    border: none;
+}
+
+.card h2 {
+    margin-top: 1rem;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 2.8rem;
+    font-weight: 500;
+}
+
+.card p {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.card-body a {
+    margin-left: 1rem;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.6rem;
+}
