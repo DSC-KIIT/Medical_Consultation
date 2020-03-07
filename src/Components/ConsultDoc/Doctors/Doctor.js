@@ -6,6 +6,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import { Paper } from '@material-ui/core';
 import StarRoundedIcon from '@material-ui/icons/StarRounded';
 import StarBorderRoundedIcon from '@material-ui/icons/StarBorderRounded';
+import { Link, BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 const useStyles = makeStyles(theme => ({
     button: {
@@ -48,6 +49,7 @@ function Doctor({doc, onClick})
                 }
             </div>
             <div>
+                <Link to='/chat'>
                 <Button
                 variant="contained"
                 color="primary"
@@ -56,6 +58,7 @@ function Doctor({doc, onClick})
                 >
                 Chat now
                 </Button>
+                </Link>
             </div>
         </Paper>
     );

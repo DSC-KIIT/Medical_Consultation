@@ -11,6 +11,7 @@ import IconButton from '@material-ui/core/IconButton';
 import CloseIcon from '@material-ui/icons/Close';
 import StarRoundedIcon from '@material-ui/icons/StarRounded';
 import StarBorderRoundedIcon from '@material-ui/icons/StarBorderRounded';
+import { Link, BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 const Transition = React.forwardRef(function Transition(props, ref) {
     return <Slide direction="up" ref={ref} {...props} />;
@@ -74,10 +75,12 @@ function DoctorModal({doc, open, handleClose}) {
               }
             </div>
           </DialogContent>
-          <DialogActions>  
+          <DialogActions>
+            <Link to="/chat">  
             <Button onClick={handleClose} startIcon={<ChatIcon></ChatIcon>} variant="contained" color="primary">
               Chat now
             </Button>
+            </Link>
             <Button onClick={handleClose} startIcon={<PhoneRoundedIcon></PhoneRoundedIcon>} variant="contained" color="primary">
               Contact Clinic
             </Button>
