@@ -3,6 +3,14 @@ import React from "react";
 export default function ChatMessages() {
   return (
     <div>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
       <div class="bubbleWrapper">
         <div class="inlineContainer own">
           <div class="ownBubble own">Hi Doc!</div>
