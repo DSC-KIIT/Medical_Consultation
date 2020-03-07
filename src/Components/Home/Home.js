@@ -1,10 +1,12 @@
 import React from 'react'
-
+import Navbar from '../layout/Navbar/Navbar';
+import Footer from '../layout/Footer/Footer';
 import './home.css'
 
 export function Home() {
     return(
         <div className="container-fluid">
+            <Navbar />
             <br></br>
             <br></br>
             <div className="cards-container">
@@ -40,6 +42,7 @@ export function Home() {
                 </div>
             
             </div>
+            <Footer />
         </div>
     );
 }

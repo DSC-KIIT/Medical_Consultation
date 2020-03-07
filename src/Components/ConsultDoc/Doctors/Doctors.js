@@ -5,6 +5,8 @@ import Button from '@material-ui/core/Button';
 import KeyboardArrowLeft from '@material-ui/icons/KeyboardArrowLeft';
 import KeyboardArrowRight from '@material-ui/icons/KeyboardArrowRight';
 import DoctorModal from './DoctorModal';
+import Navbar from '../../layout/Navbar/Navbar';
+import Footer from '../../layout/Footer/Footer';
 
 function Doctors({docs})
 {
@@ -35,6 +37,7 @@ function Doctors({docs})
     
     return(
         <div className='jobs'>
+            <Navbar />
             <DoctorModal open={open} doc={selectedDoc} handleClose={handleClose}/>
             <div className='numjob'>
                 Found {docs.length} doctors
@@ -72,7 +75,7 @@ function Doctors({docs})
             <br></br>
             <br></br>
             <br></br>
-           
+           <Footer />
         </div>
     );
 }

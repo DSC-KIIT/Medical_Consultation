@@ -8,19 +8,19 @@ import './App.css';
 import { Home } from './Components/Home/Home'
 import { ConsultDoc } from './Components/ConsultDoc/ConsultDoc';
 import Footer from './Components/layout/Footer/Footer';
+import Chat from './Components/Chat/Chat';
 
 
 function App() {
   return (
     <Router>
       <div className="App">
-      <Navbar />
           <Switch>
             <Route exact path="/" component={ Home }></Route>
             <Route exact path="/home" component={ Home }></Route>
             <Route exact path="/consultadoc" component={ ConsultDoc }></Route>
+            <Route exact path="/chat" component={ Chat }></Route>
           </Switch>
-      <Footer />
       </div>
     </Router>
   );
