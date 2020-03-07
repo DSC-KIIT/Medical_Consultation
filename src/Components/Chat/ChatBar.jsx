@@ -31,7 +31,7 @@ export default function ChatBar() {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
+    <div className='chatbar'>
       <AppBar position="static" id="navbar">
         <Toolbar className={classes.toolbar}>
           <IconButton
